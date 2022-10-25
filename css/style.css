@@ -33,6 +33,10 @@
     float: right;
 }
 
+#oda-chat-end-conversation {
+    display: none;
+}
+
 .oda-chat-wrapper .oda-chat-button:not(.oda-chat-none) {
     border-radius: 500px !important;
     outline: none;

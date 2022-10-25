@@ -39,6 +39,7 @@ const initSdk = (name) => {
 			botButtonIcon: 'images/icon_bot_3.png',
 			logoIcon: 'images/icon_bot_2.png',
 			personIcon: 'images/user-icon.png',
+			agentAvatar: 'images/agent-icon.png',
 			botIcon: 'images/icon_bot.png',
 			//personIcon: 'images/user-icon.png',
 			colors: {
@@ -94,7 +95,7 @@ const initSdk = (name) => {
 				isConnected = true;
 			}
 
-			if (message.messagePayload.text == "¡Ha sido un gusto asesorarte!😊 No dudés en volver a contactarnos por este medio.") {
+			if (message.messagePayload.text == "¡Ha sido un gusto asesorarte!?? No dudés en volver a contactarnos por este medio.") {
 				console.log('DISCONNECTING AGENT');
 				isConnected = false;
 			}
