@@ -90,12 +90,12 @@ const initSdk = (name) => {
 
 		Bots.on('message:received', function (message) {
 			console.log('the user received a message:', message.messagePayload.text);
-			if (message.messagePayload.text == "Te voy a comunicar con uno de nuestros asesores para que continúe con tu trámite/consulta.") {
+			if (message.messagePayload.text == "Uno de nuestros asesores te estará atendiendo a la brevedad posible, un momento por favor.") {
 				console.log('PASSING TO AGENT');
 				isConnected = true;
 			}
 
-			if (message.messagePayload.text == "¡Ha sido un gusto asesorarte!?? No dudés en volver a contactarnos por este medio.") {
+			if (message.messagePayload.text == "¡Ha sido un gusto asesorarte!😊 No dudés en volver a contactarnos por este medio.") {
 				console.log('DISCONNECTING AGENT');
 				isConnected = false;
 			}
