@@ -27,7 +27,7 @@ const initSdk = (name) => {
 			showTypingIndicator: true,
 			enableClearMessage: false,
 			enableTimestamp: false,
-			//speechLocale: 'es-es',
+			speechLocale: 'es-es',
 			//enableDraggableButton : true,
 			typingIndicatorTimeout: '10',
 			conversationBeginPosition: 'bottom',
