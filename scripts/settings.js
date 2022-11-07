@@ -27,7 +27,7 @@ const initSdk = (name) => {
 			showTypingIndicator: true,
 			enableClearMessage: false,
 			enableTimestamp: false,
-			speechLocale: 'es-es',
+			//speechLocale: 'es-es',
 			//enableDraggableButton : true,
 			typingIndicatorTimeout: '10',
 			conversationBeginPosition: 'bottom',
@@ -88,6 +88,8 @@ const initSdk = (name) => {
 		} else {
 			Bots = new WebSDK(chatWidgetSettings);
 		}
+		
+		Bots.setSpeechLocale('es-es');
 
 		Bots.on('message:received', function (message) {
 			console.log('the user received a message:', message.messagePayload.text);
@@ -109,8 +111,6 @@ const initSdk = (name) => {
 		});
 
 		Bots.showTypingIndicator();
-
-		Bots.setSpeechLocale('es-es');
 
 		//Agregar este código para condicional de mensaje al abandonar la web
 		var abrewidget = false;
