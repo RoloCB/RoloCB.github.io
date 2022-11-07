@@ -61,7 +61,7 @@ const initSdk = (name) => {
 				notificationBadgeText: '#800080'
 			},
 			i18n: {
-				en: {
+				es: {
 					chatTitle: 'Alex',       // Replaces Chat
 					connected: 'Conectado',            // Replaces Connected
 					inputPlaceholder: 'Escribe aqui', // Replaces Type a message
