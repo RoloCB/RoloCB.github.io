@@ -88,8 +88,6 @@ const initSdk = (name) => {
 		} else {
 			Bots = new WebSDK(chatWidgetSettings);
 		}
-		
-		Bots.setSpeechLocale('es-es');
 
 		Bots.on('message:received', function (message) {
 			console.log('the user received a message:', message.messagePayload.text);
@@ -102,8 +100,6 @@ const initSdk = (name) => {
 				console.log('DISCONNECTING AGENT');
 				isConnected = false;
 			}
-
-
 		});
 
 		Bots.on('message:sent', function (message) {
