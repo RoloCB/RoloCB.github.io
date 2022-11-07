@@ -110,7 +110,7 @@ const initSdk = (name) => {
 
 		Bots.showTypingIndicator();
 
-		//Bots.setSpeechLocale('es-es');
+		Bots.setSpeechLocale('es-es');
 
 		//Agregar este código para condicional de mensaje al abandonar la web
 		var abrewidget = false;
